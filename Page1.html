@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <!-- Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/fb65509740.js" crossorigin="anonymous"></script>
+    <link href="output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-white dark:bg-black p-5">
+
+    <div class="fixed top-4 right-4 z-10 flex gap-2 lg:hidden">
+        <button data-target="#aside-right" class="px-3 py-2 bg-sky-500 text-white rounded transition">Right ☰ </button>
+    </div>
+
+    <div class="fixed top-4 left-4 z-10 flex gap-2 lg:hidden">
+        <button data-target="#aside-left" class="px-3 py-2 bg-sky-500 text-white rounded transition">Left ☰ </button>
+    </div>
+
+    <div class="container mx-auto grid grid-cols-12 gap-6 mt-6">
+        <!-- Side Left -->
+        <aside id="aside-left" class="lg:block lg:opacity-100
+                fixed left-0 top-0 h-screen w-[80%] bg-white dark:bg-black z-40
+                transform -translate-x-full transition-transform duration-500 ease-in-out
+                p-4 shadow
+                lg:relative md:h-auto lg:w-auto lg:bg-transparent lg:transform-none lg:shadow-none
+                lg:col-span-3 rounded overflow-auto  opacity-0 pointer-events-none">
+
+            <!-- Widget Search -->
+            <div class="widget flex flex-row">
+                <input type="search" placeholder="Search"
+                    class="w-full mb-2 p-2 rounded border text-sm focus:outline-none focus:ring-sky-500" />
+                <button class="bg-sky-400 text-white p-1 w-full h-10 rounded-md text-sm">Search</button>
+            </div>
+
+            <!-- Widget Members -->
+            <div class="widget">
+
+                <!-- Title of section -->
+                <h4 class="title-widget">Members</h4>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap gap-5">
+                    <button class="btn-tag">Newset</button>
+                    <button class="btn-tag">Active</button>
+                    <button class="btn-tag">Popular</button>
+                </div>
+
+                <!-- Card Members -->
+                <div class="mt-5">
+                    <div class="flex flex-col gap-5">
+                        <div class="flex gap-3">
+                            <img src="images/MhAliAlban.jpg" class="w-[50px] h-[50px] object-cover rounded-md" />
+                            <div>
+                                <h3 class="font-bold">Mohamed Ali Basha</h3>
+                                <button class="bg-sky-200 w-[100px] px-3 py-1 rounded-md text-[13px] mt-2">
+                                    500
+                                    Friend
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <img src="images/youtube.jpg" class="w-[50px] h-[50px] object-cover rounded-md" />
+                            <div>
+                                <h3 class="font-bold">Youtube Ali Basha</h3>
+                                <button class="bg-sky-200 w-[100px] px-3 py-1 rounded-md text-[13px] mt-2">
+                                    250
+                                    Friend
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <img src="images/banner.jpg" class="w-[50px] h-[50px] object-cover rounded-md" />
+                            <div>
+                                <h3 class="font-bold">Sky Ali Basha</h3>
+                                <button class="bg-sky-200 w-[100px] px-3 py-1 rounded-md text-[13px] mt-2">
+                                    200
+                                    Friend
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Widget Groups -->
+            <div class="widget">
+
+                <!-- Title of section -->
+                <h4 class="title-widget">Groups</h4>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap gap-5">
+                    <button class="btn-tag">Newset</button>
+                    <button class="btn-tag">Active</button>
+                    <button class="btn-tag">Populve</button>
+                    <button class="btn-tag">Alphabetical</button>
+                </div>
+
+                <!-- Card Members -->
+                <div class="mt-5">
+                    <div class="flex flex-col gap-5">
+                        <div class="flex gap-3">
+                            <img src="images/MhAliAlban.jpg" class="w-[50px] h-[50px] object-cover rounded-md" />
+                            <div>
+                                <h3 class="font-bold">The Tourist</h3>
+                                <button class="bg-sky-200 px-3 py-1 rounded-md text-[13px] mt-2">
+                                    active 3 years, 8 months ago
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <img src="images/youtube.jpg" class="w-[50px] h-[50px] object-cover rounded-md" />
+                            <div>
+                                <h3 class="font-bold">The Social Network</h3>
+                                <button class="bg-sky-200 px-3 py-1 rounded-md text-[13px] mt-2">
+                                    active 3 years, 7 months ago
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <img src="images/banner.jpg" class="w-[50px] h-[50px] object-cover rounded-md" />
+                            <div>
+                                <h3 class="font-bold">Monsters, Inc.</h3>
+                                <button class="bg-sky-200 px-3 py-1 rounded-md text-[13px] mt-2">
+                                    active 4 years, 7 months ago
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recantly Active Members -->
+            <div class="widget">
+                <!-- Title of section -->
+                <h4 class="title-widget">Recantly Active Members</h4>
+
+                <!-- Image of members -->
+                <div class="flex flex-wrap gap-3">
+                    <img src="images/MhAliAlban.jpg" class="w-16 h-16 rounded-md object-cover" />
+                    <img src="images/MhAliBasha2.jpg" class="w-16 h-16 rounded-md object-cover" />
+                    <img src="images/MhAliBasha3.jpg" class="w-16 h-16 rounded-md object-cover" />
+                    <img src="images/banner.jpg" class="w-16 h-16 rounded-md object-cover" />
+                    <img src="images/youtube.jpg" class="w-16 h-16 rounded-md object-cover" />
+                    <img src="images/MhAliAlban.jpg" class="w-16 h-16 rounded-md object-cover" />
+                    <img src="images/MhAliBasha2.jpg" class="w-16 h-16 rounded-md object-cover" />
+                    <img src="images/MhAliBasha3.jpg" class="w-16 h-16 rounded-md object-cover" />
+                    <img src="images/banner.jpg" class="w-16 h-16 rounded-md object-cover" />
+                    <img src="images/youtube.jpg" class="w-16 h-16 rounded-md object-cover" />
+                </div>
+            </div>
+        </aside>
+
+        <!-- المحتوى -->
+        <main class="col-span-12 lg:col-span-5 md:col-span-12">
+            <!-- Hero Banner -->
+            <div
+                class="relative bg-[url(/images/Banner.jpg)] bg-cover bg-no-repeat p-5 bg-center rounded-lg h-60 flex items-center justify-center text-white text-2xl font-bold">
+                <h2 class="absolute bottom-6 left-3">Welcome to the community!</h2>
+            </div>
+            <!-- Title Of Section Activity -->
+            <h3 class="title-section  text-mode">Last Activity</h3>
+            <!-- First Card Activity -->
+            <div class="flex flex-col gap-7 mb-10">
+                <div class="flex gap-3 p-2 border-b">
+                    <!-- Photo -->
+                    <img src="images/banner.jpg" class="w-12 h-12 rounded-full object-cover" />
+
+                    <!-- Text -->
+                    <div>
+                        <p class="text-sm text-black dark:text-white">
+                            <span class="font-bold text-mode">Karimov Osama</span> posted in update in the group <a
+                                href="#" class="text-sky-600 font-medium dark:text-sky-300">The Social Netwrok</a>
+                        </p>
+                        <p class="text-xs text-gray-600">4 years, 7 months ago</p>
+                        <p class="mt-1 text-gray-700 dark:text-white">Perfection is achieved...<span
+                                class="text-1xl">[Read More]</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Second Card Activity -->
+                <div class="flex gap-3 p-2 border-b">
+                    <!-- Photo -->
+                    <img src="images/MhAliAlban.jpg" class="w-12 h-12 rounded-full object-cover" />
+
+                    <!-- Text -->
+                    <div>
+                        <p class="text-sm text-black dark:text-white">
+                            <span class="font-bold text-mode">Mohamed Ali Basha</span> posted in update in the group <a
+                                href="#" class="text-sky-600 font-medium dark:text-sky-300">The Social Network</a>
+                        </p>
+                        <p class="text-xs text-gray-600">200 years, 7 months ago</p>
+                        <p class="mt-1 text-gray-700 dark:text-white">Hello ...<span class="text-1xl">[Read More]</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Three Card Activity -->
+                <div class="flex gap-3 p-2 border-b">
+                    <!-- Photo -->
+                    <img src="images/youtube.jpg" class="w-12 h-12 rounded-full object-cover" />
+
+                    <!-- Text -->
+                    <div>
+                        <p class="text-sm text-black dark:text-white">
+                            <span class="font-bold text-mode">Youtube</span> posted in update in the group <a href="#"
+                                class="text-sky-600 font-medium dark:text-sky-300">The Social Netwrok</a>
+                        </p>
+                        <p class="text-xs text-gray-600">1 years, 7 month ago</p>
+                        <p class="mt-1 text-gray-700 dark:text-white">Hi, We're Youtube<span class="text-1xl">[Read
+                                More]</span></p>
+                    </div>
+                </div>
+                <button class="bg-sky-200 px-5 py-2 rounded-md text-black">Load More</button>
+            </div>
+            <h3 class="title-section text-mode">Latest Posts</h3>
+            <div class="flex flex-col gap-5 mb-10">
+                <!-- First Post -->
+                <div class="grid grid-cols-4 gap-4 border-b pb-5">
+                    <!-- Photo -->
+                    <div class="col-span-1">
+                        <img src="images/banner.jpg" class="w-32 h-32 rounded-md object-cover" />
+                    </div>
+                    <!-- Text -->
+                    <div class="col-span-3">
+                        <h4 class="font-bold text-base text-mode">Sky Image</h4>
+                        <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Magnam repellendus neque, minima eveniet perspiciatis earum inventore quam enim, veritatis
+                            facilis qui ratione iusto odit laudantium odio possimus omnis, similique aliquam?</p>
+                    </div>
+                </div>
+                <!-- Second Post -->
+                <div class="grid grid-cols-4 gap-4 border-b pb-5">
+                    <!-- Photo -->
+                    <div class="col-span-1">
+                        <img src="images/MhAliAlban.jpg" class="w-32 h-32 rounded-md object-cover" />
+                    </div>
+                    <!-- Text -->
+                    <div class="col-span-3">
+                        <h4 class="font-bold text-base text-mode">Mohamed Ali Basha</h4>
+                        <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Magnam repellendus neque, minima eveniet perspiciatis earum inventore quam enim, veritatis
+                            facilis qui ratione iusto odit laudantium odio possimus omnis, similique aliquam?</p>
+                    </div>
+                </div>
+                <!-- Thirty Post -->
+                <div class="grid grid-cols-4 gap-4 border-b pb-5">
+                    <!-- Photo -->
+                    <div class="col-span-1">
+                        <img src="images/getir-logo.jpeg" class="w-32 h-32 object-cover rounded-md" />
+                    </div>
+                    <!-- Text -->
+                    <div class="col-span-3">
+                        <h4 class="font-bold text-base text-mode">Application Getier</h4>
+                        <p class="text-gray-500 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
+                            eius officiis hic dicta nulla, repellat autem nesciunt dolorum, explicabo enim minima
+                            aliquam? Ab quisquam eligendi a atque repellat numquam molestiae?</p>
+                    </div>
+                </div>
+                <!-- Paginations Buttons -->
+                <div class="flex justify-center gap-4">
+                    <button class="btn-pg"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="btn-pg"><i class="fa-solid fa-1"></i></button>
+                    <button class="btn-pg"><i class="fa-solid fa-2"></i></button>
+                    <button class="btn-pg"><i class="fa-solid fa-3"></i></button>
+                    <button class="btn-pg"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            <!-- Section Features -->
+            <h3 class="title-section text-mode">Features</h3>
+            <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-2 gap-6 mb-10">
+                <div class="card-f">
+                    <div class="bg-sky-100 rounded-md p-2">
+                        <img src="images/banner.jpg" class="w-auto h-auto rounded-md object-cover" alt="photo" />
+                    </div>
+                    <h4 class="title-card-f text-mode">Feature Title</h4>
+                </div>
+                <div class="card-f">
+                    <div class="bg-sky-100 p-2 rounded-md">
+                        <img src="images/getir-logo.jpeg" class="object-cover w-auto h-auto rounded-md" />
+                    </div>
+                    <h4 class="title-card-f text-mode">Application Getir</h4>
+                </div>
+                <div class="card-f">
+                    <div class="bg-sky-100 p-2 rounded-md">
+                        <img src="images/MhAliAlban.jpg" class="rounded-md w-auto h-auto" alt="photo" />
+                    </div>
+                    <h4 class="title-card-f text-mode">Mohamed Ali Basha</h4>
+                </div>
+            </div>
+        </main>
+
+        <!-- Side right -->
+        <aside id="aside-right" class="lg:block lg:opacity-100
+    fixed right-0 top-0 h-screen w-[80%] bg-white dark:bg-black z-40
+    p-4 shadow
+    lg:relative md:h-auto lg:w-auto lg:bg-transparent lg:transform-none lg:shadow-none
+    lg:col-span-3 rounded overflow-auto
+    transform translate-x-full opacity-0 pointer-events-none
+    transition-all duration-500 ease-in-out">
+
+            <div class="widget">
+                <!-- Title of section -->
+                <h4 class="title-widget">Sign in</h4>
+
+                <!-- Username -->
+                <input type="text" placeholder="Username"
+                    class="w-full mb-2 p-2 rounded border text-sm focus:outline-none focus:ring-sky-500" />
+
+                <!-- Password -->
+                <input type="password" placeholder="Password"
+                    class="w-full mb-2 p-2 rounded border text-sm focus:outline-none focus:ring-sky-500" />
+
+                <!-- Remember Me -->
+                <div>
+                    <input type="checkbox" id="RememberMe" class="text-sky-500 w-3 h-3 border-gray-300 rounded-none" />
+                    <label for="RememberMe" class="text-gray-700 text-sm">Remember Me</label>
+                </div>
+
+                <!-- Button Sign in-->
+                <button class="bg-sky-200 p-3 w-full rounded-md">Sign in</button>
+
+                <!-- Lost Password -->
+                <a href="#" class="flex gap-3">
+                    <i class="fa-solid fa-key text-sm text-gray-600"></i>
+                    <h4 class="text-sm text-gray-600">Lost Password</h4>
+                </a>
+            </div>
+
+            <!-- Widget Statistics -->
+            <div class="widget">
+                <!-- Title of section -->
+                <h4 class="title-widget">Statistics</h4>
+
+                <!-- Boxies  Statistics -->
+                <div class="flex flex-col gap-5">
+                    <div class="flex justify-between gap-3 border-b pb-4 border-black">
+                        <i class="fa-solid fa-pen text-[18px] mt-1"></i>
+                        <h3 class="text-[18px]">Posts</h3>
+                        <h4 class="text-[18px]">6</h4>
+                    </div>
+                    <div class="flex justify-between gap-3 border-b pb-4 border-black">
+                        <i class="fa-solid fa-comments text-[18px] mt-1"></i>
+                        <h3 class="text-[18px]">Comment</h3>
+                        <h4 class="text-[18px]">16</h4>
+                    </div>
+                    <div class="flex justify-between gap-3 border-b pb-4 border-black">
+                        <i class="fa-solid fa-person text-[18px] mt-1"></i>
+                        <h3 class="text-[18px]">Members</h3>
+                        <h4 class="text-[18px]">91</h4>
+                    </div>
+                    <div class="flex justify-between gap-3 border-b pb-4 border-black">
+                        <i class="fa-solid fa-burger text-[18px] mt-1"></i>
+                        <h3 class="text-[18px]">Food</h3>
+                        <h4 class="text-[18px]">44</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Widget Who Online -->
+            <div class="widget">
+                <!-- Title of section -->
+                <h4 class="title-widget">Who Online ?!</h4>
+
+                <!-- Boxies  Statistics -->
+                <p class="text-sm">There are no users currently online</p>
+            </div>
+
+            <!-- Widget Recent Replies -->
+            <div class="widget">
+                <!-- Title of section -->
+                <h4 class="title-widget">Recent Replies</h4>
+
+                <!-- Boxies  Statistics -->
+                <div class="flex flex-col gap-5">
+                    <p class="text-sm">Uniquely pontificate standards compliant <span class="text-gray-500"> | 4 years
+                            ago</span></p>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <p class="text-sm">Quickly expedite holistic e-tailers<span class="text-gray-500"> | 4 years, 7
+                            months ago</span></p>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <p class="text-sm">Intrinsically parallel task cross-platform<span class="text-gray-500"> | 4 years,
+                            7 months ago</span></p>
+                </div>
+            </div>
+
+            <!-- Widget Recent Topics -->
+            <div class="widget">
+                <!-- Title of section -->
+                <h4 class="title-widget">Recent Topics</h4>
+
+                <!-- Boxies  Statistics -->
+                <div class="flex flex-col gap-5">
+                    <p class="text-sm">Uniquely pontificate standards compliant <span class="text-gray-500">by</span>
+                        Michelle Jones <span class="text-gray-500"> | 4 years ago</span></p>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <p class="text-sm">Quickly expedite holistic e-tailers <span class="text-gray-500">by</span> Justin
+                        Duchschere <span class="text-gray-500"> | 4 years, 7 months ago</span></p>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <p class="text-sm">Dynamically conceptualize <span class="text-gray-500">by</span> Justin Duchschere
+                        <span class="text-gray-500"> | 4 years, 7 months ago</span>
+                    </p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Overlay for menu -->
+    <div id="overlay" class="fixed inset-0 bg-black/40 z-30 hidden lg:hidden"></div>
+
+    <!-- Script Control -->
+
+    <script>
+        // فتح/إغلاق عام بالـ data-target لنفس العنصر (بدون تكرار محتوى)
+        const overlay = document.getElementById('overlay');
+
+        function openDrawer(el) {
+            if (el.id.includes('right')) el.classList.remove('translate-x-full');
+            else el.classList.remove('-translate-x-full');
+            el.classList.remove('opacity-0', 'pointer-events-none');
+            el.classList.add('opacity-100', 'pointer-events-auto');
+            overlay.classList.remove('hidden');
+        }
+
+        function closeDrawer(el) {
+            if (el.id.includes('right')) el.classList.add('translate-x-full');
+            else el.classList.add('-translate-x-full');
+            el.classList.remove('opacity-100', 'pointer-events-auto');
+            el.classList.add('opacity-0', 'pointer-events-none');
+            overlay.classList.add('hidden');
+        }
+
+        // أزرار الفتح
+        document.querySelectorAll('[data-target]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const el = document.querySelector(btn.getAttribute('data-target'));
+                openDrawer(el);
+            });
+        });
+
+        // إغلاق بالضغط على الـ overlay أو سحب للخارج ممكن تضيفه لاحقًا
+        overlay.addEventListener('click', () => {
+            ['#aside-left', '#aside-right'].forEach(sel => {
+                const el = document.querySelector(sel);
+                if (!el.classList.contains('hidden')) closeDrawer(el);
+            });
+        });
+
+        // إغلاق بالـ ESC (اختياري)
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') overlay.click();
+        });
+    </script>
+
+</body>
+
+</html>

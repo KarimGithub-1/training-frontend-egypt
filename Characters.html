@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <!-- Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/fb65509740.js" crossorigin="anonymous"></script>
+    <link href="output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-black">
+
+    <div class="contaienr w-full top-0 left-0 z-40 bg-white dark:bg-gray-900 shadow-md">
+        <div class="flex items-center justify-between px-6 py-4">
+            <h1 class="text-blue-900 dark:text-white text-2xl font-bold uppercase">Egypt & Muhammad Ali</h1>
+            <i class="block sm:hidden fas fa-home text-2xl text-blue-900 px-5 py-2 transition" id="menu-btn"></i>
+            <ul class="hidden sm:flex gap-6 text-gray-600 dark:text-gray-300 font-medium">
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="About.html">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="Gallery.html">
+                        Gallery
+                    </a>
+                </li>
+                <li>
+                    <a href="Contact.html">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="Characters.html" class="text-slate-500">
+                        Characters
+                    </a>
+                </li>
+            </ul>
+            <div class="hidden fixed top-0 left-0 h-full w-72 shadow-md z-50 bg-white p-5" id="menu">
+                <h1 class="text-blue-900 dark:text-white text-2xl font-bold uppercase border-b-2 pb-2">Egypt & Muhammad
+                    Ali</h1>
+                <ul class="flex flex-col text-gray-600 dark:text-gray-300 font-medium gap-7 mt-5">
+                    <li class="border-b-2 pb-5"><a href="index.html" class="bg-slate-500 text-white rounded-md px-5 py-3">Home</a></li>
+                    <li class="border-b-2 pb-5"><a href="About.html" class="bg-gray-700 text-white rounded-md px-5 py-3">About</a></li>
+                    <li class="border-b-2 pb-5"><a href="Gallery.html" class="bg-gray-500 text-white rounded-md px-5 py-3">Gallery</a></li>
+                    <li class="border-b-2 pb-5"><a href="Contact.html" class="bg-gray-700 text-white rounded-md px-5 py-3">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section (Banner) -->
+    <div class="container mx-auto mt-10">
+        <div
+            class="bg-[url(./images/Page2/banner2.jpg)] bg-blend-multiply bg-black/50 h-96 bg-cover rounded-md flex flex-col gap-5 items-center justify-center">
+            <h1 class="text-white text-2xl font-bold">Key Figures of Modern Egypt</h1>
+            <p class="text-gray-300 mx-10">
+                From Muhammad Ali Pasha to his successors, leaders who shaped Egypt’s path —
+                balancing reform, ambition, and power.
+            </p>
+        </div>
+    </div>
+
+    <h3 class="text-slate-500 dark:text-white text-2xl font-bold text-center mt-10">Characters</h3>
+
+    <!-- Mohamed Ali Basha -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <!-- Grid image + text -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- Left image with frame -->
+            <div class="relative w-full max-w-md mx-auto">
+                <!-- frame -->
+                <div class="absolute -top-4 -left-4 w-full h-full border-8 border-red-300 rounded"></div>
+                <!-- Image -->
+                <img src="images/MhAliAlban.jpg" />
+            </div>
+
+            <!-- Right Text -->
+            <div>
+                <h2 class="text-4xl font-extrabold leading-snug mb-4 dark:text-white">We Are Here To Remember!
+                    Our Story Is Muhammad Ali’s Legacy.</h2>
+                <span class="inline-flex items-center text-red-600 font-semibold mb-3">
+                    <span class="w-3 h-0 border-2 p-1 border-red-400"></span>
+                    <span class="w-6 h-0.5 bg-red-600 mr-2"></span>
+                    about us
+                </span>
+                <p class="text-gray-600 dark:text-white leading-relaxed mb-8">
+                    Muhammad Ali Pasha (1769–1849) reshaped Egypt with military reforms, schools, and industries.
+                    But his rule also meant forced labor, heavy taxation, and ruthless suppression of rivals.
+                    A story of ambition, modernization — and tyranny.
+                </p>
+
+                <!-- 3 Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="relative bg-white dark:bg-slate-600 border rounded-lg shadow p-6 text-center">
+                        <div class="absolute top-0 right-0 w-10 h-10 bg-red-400 
+            [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
+                        <i class="fa-solid fa-khanda text-5xl"></i>
+                        <h3 class="font-semibold dark:text-white">From an Albanian officer to Egypt’s ruler in 1805.
+                        </h3>
+                        <span class="absolute bottom-0 right-2 text-5xl text-gray-200 font-bold">1</span>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="relative bg-white dark:bg-slate-600 border rounded-lg shadow p-6 text-center">
+                        <div class="absolute top-0 right-0 w-10 h-10 bg-red-400 
+            [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
+                        <i class="fa-solid fa-train text-5xl"></i>
+                        <h3 class="font-semibold dark:text-white">Built factories, schools, and a modern army — at a
+                            heavy cost.</h3>
+                        <span class="absolute bottom-0 right-2 text-5xl text-gray-200 font-bold">2</span>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="relative bg-white dark:bg-slate-600 border rounded-lg shadow p-6 text-center">
+                        <div class="absolute top-0 right-0 w-10 h-10 bg-red-400 
+            [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
+                        <i class="fa-solid fa-home text-5xl"></i>
+                        <h3 class="font-semibold dark:text-white">Praised as the founder of modern Egypt, yet remembered
+                            for his
+                            tyranny.</h3>
+                        <span class="absolute bottom-0 right-2 text-5xl text-gray-200 font-bold">3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section For Ibarheem Basha -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <!-- Grid image + text -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Left image with frame -->
+            <div class="relative w-full max-w-md mx-auto">
+                <!-- frame -->
+                <div class="absolute -top-4 -left-4 w-full h-full border-8 border-red-300 rounded"></div>
+                <!-- Image -->
+                <img src="images/Page2/Ibrahim_Pasha,_Larivière.jpg" />
+            </div>
+            <!-- Right Text -->
+            <div>
+                <h2 class="text-4xl font-extrabold leading-snug mb-4">Ibrahim Pasha</h2>
+                <span class="inline-flex items-center text-red-600 font-semibold mb-3">
+                    <span class="w-3 h-0 border-2 p-1 border-red-500"></span>
+                    <span class="w-6 h-0.5 bg-red-400 font-semibold mr-3"></span>
+                    about us
+                </span>
+                <p class="text-gray-600 leading-relaxed mb-8">
+                    The brilliant son of Muhammad Ali who led Egypt’s armies to victory.
+                    He conquered in Sudan, fought in Greece, and shook the Ottoman Empire.
+                    A warrior celebrated in Europe, yet remembered as a symbol of Egypt’s forced campaigns.
+                </p>
+
+                <!-- 3 Cards for ibraheem basha -->
+                <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-3 gap-6">
+                    <!-- First Card -->
+                    <div class="relative bg-white rounded-lg shadow p-6 text-center">
+                        <div class="absolute top-0 right-0 w-10 h-10 bg-red-400 
+            [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
+                        <i class="text-5xl not-italic">⚔️</i>
+                        <h3 class="font-semibold">Led decisive battles from Greece to Syria.</h3>
+                        <span class="absolute bottom-0 right-2 text-4xl text-gray-200 font-extrabold">1</span>
+                    </div>
+                    <!-- Second Card -->
+                    <div class="relative bg-white rounded-lg shadow p-6 text-center">
+                        <div class="absolute top-0 right-0 w-10 h-10 bg-red-400
+                        [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
+                        <i class="text-5xl not-italic">🌍</i>
+                        <h3 class="font-semibold">Extended Egypt’s influence beyond its borders.</h3>
+                        <span class="absolute bottom-0 right-2 text-4xl text-gray-300 font-extrabold">2</span>
+                    </div>
+                    <!-- Thiry Card -->
+                    <div class="relative bg-white shadow rounded p-6 text-center">
+                        <div class="absolute top-0 right-0 w-10 h-10 bg-red bg-red-400
+                        [clip-path:polygon(100%_0,0_0,100%_100%)]"></div>
+                        <i class="text-5xl not-italic">⚖️</i>
+                        <h3 class="font-semibold">Admired abroad, but his campaigns drained Egypt’s people.</h3>
+                        <span class="absolute bottom-0 right-2 text-gray-300 text-4xl font-extrabold">3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bg-gray-900 text-gray-300 p-8 mt-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                <div class="border-b pb-3 mb-3 md:border-none">
+                    <p>Egypt Under Muhammad Ali</p>
+                </div>
+                <div class="border-b pb-3 mb-3 md:border-none">
+                    <h3>links:</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Timeline
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Gallery
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="border-b pb-3 mb-3 md:border-none">
+                    <h3>Social Media: </h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Instgaram
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Twitter
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Github
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-300 text-black text-center p-5">
+            <p>© 2025 All rights reserved. This page is a student project about history.</p>
+        </div>
+
+    </footer>
+
+    <!-- Script js for the menu-->
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", function () {
+            document.getElementById("menu").classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
