@@ -45,12 +45,16 @@ Free to use and modify — for learning purposes only.
 
 ### 🏠 Homepage
 ![Homepage](./screenshot/screen1.png)
-
-### ℹ️ About Page
-![About](./screenshot/screen2.png)
+![Homepage](./screenshot/screen2.png)
+![Homepage](./screenshot/screen3.png)
+![Homepage](./screenshot/screen4.png)
 
 ### 📬 Contact Page
-![Contact](./screenshot/screen3.png)
+![Contact](./screenshot/screen6.png)
 
 ### 🖼️ Gallery Page
-![Gallery](./screenshot/screen4.png).
+![Gallery](./screenshot/screen7.png).
+
+### 🙎‍♂️ Characters Page
+![Gallery](./screenshot/screen8.png).
+![Gallery](./screenshot/screen9.png).
