@@ -29,11 +29,6 @@ It includes simple pages about **Muhammad Ali Pasha** and key figures in modern 
 
 ---
 
-## 🚀 Live Demo / النسخة المباشرة
-*(يمكنك رفعه على GitHub Pages أو Netlify وإضافة الرابط هنا لاحقًا)*
-
----
-
 ## 📜 License / الترخيص
 Free to use and modify — for learning purposes only.  
 حر للتعديل والاستخدام — لأغراض التعلم فقط
