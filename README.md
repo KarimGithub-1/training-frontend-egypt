@@ -44,13 +44,13 @@ Free to use and modify — for learning purposes only.
 ## 📸 Screenshots
 
 ### 🏠 Homepage
-![Homepage](./screenshots/screen1.png)
+![Homepage](./screenshot/screen1.png)
 
 ### ℹ️ About Page
-![About](./screenshots/screen2.png)
+![About](./screenshot/screen2.png)
 
 ### 📬 Contact Page
-![Contact](./screenshots/screen3.png)
+![Contact](./screenshot/screen3.png)
 
 ### 🖼️ Gallery Page
-![Gallery](./screenshots/screen4.png).
+![Gallery](./screenshot/screen4.png).
