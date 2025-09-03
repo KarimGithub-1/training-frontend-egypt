@@ -36,4 +36,21 @@ It includes simple pages about **Muhammad Ali Pasha** and key figures in modern 
 
 ## 📜 License / الترخيص
 Free to use and modify — for learning purposes only.  
-حر للتعديل والاستخدام — لأغراض التعلم فقط.
+حر للتعديل والاستخدام — لأغراض التعلم فقط
+
+
+
+
+## 📸 Screenshots
+
+### 🏠 Homepage
+![Homepage](./screenshots/screen1.png)
+
+### ℹ️ About Page
+![About](./screenshots/screen2.png)
+
+### 📬 Contact Page
+![Contact](./screenshots/screen3.png)
+
+### 🖼️ Gallery Page
+![Gallery](./screenshots/screen4.png).
